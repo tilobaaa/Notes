@@ -1,0 +1,239 @@
+.App {
+  text-align: left;
+}
+input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+ul{
+  margin: 0;
+
+}
+
+h4 {
+  margin: 0;
+}
+
+svg {
+  font-size: 1rem;
+}
+
+svg:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(202, 202, 248);
+  outline: rgb(43, 43, 237);
+}
+
+.login,
+.sign-up {
+  min-height: 100vh;
+  background-color: rgb(187, 190, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* takenNote.js */
+
+.taken-note {
+  padding: 1rem;
+  position: relative;
+  height: 100vh;
+}
+
+.taken-note nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.taken-note button {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  width: fit-content;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.taken-note input {
+  min-width: 40%;
+}
+
+.child-sign,
+.login-div {
+  border: 1px solid #535d795d;
+  box-shadow: 1px;
+  padding: 3rem;
+}
+
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up input {
+  width: 40vw;
+}
+
+.sign-up p {
+  text-align: center;
+}
+
+.error {
+  text-align: left;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form input {
+  width: 100%;
+}
+
+.password {
+  display: inline;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+  cursor: pointer;
+}
+
+/* Note.js */
+.note-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.note {
+  padding: 1rem;
+  position: relative;
+  border: 0.5px solid rgba(206, 206, 246, 0.466);
+  width: 30%;
+  min-height: 10vh;
+}
+
+.pin {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+.delete-icon:hover {
+  color: red;
+}
+
+.bottom-svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* Modal.js */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  min-width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Note form */
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-form input {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.note-form textarea {
+  height: 30vh;
+  padding: 1rem;
+}
+
+.note-form button {
+  margin: 1rem 0;
+}
+
+.search-div{
+  position: relative;
+}
+.search-list{
+  list-style: none;
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  width: 100%;
+  background-color: rgb(128, 128, 128);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 20;
+ 
+}
+
+.search-list-individual{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  
+}
+
+.search-list-individual:hover{
+  cursor: pointer;
+  background-color: rgb(54, 54, 54);
+}
